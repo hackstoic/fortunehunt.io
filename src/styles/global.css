@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Web3 Styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-gray-50 text-primary-700 font-sans;
+  }
+}
+
+@layer components {
+  /* Web3 Grid Background */
+  .web3-grid {
+    background-image: 
+      linear-gradient(rgba(246, 173, 85, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(246, 173, 85, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+  
+  /* Neon Button Effect */
+  .neon-button {
+    @apply relative px-6 py-3 bg-accent-500 text-white font-semibold rounded-lg;
+    @apply transition-all duration-300 hover:bg-accent-600;
+    box-shadow: 0 0 10px rgba(246, 173, 85, 0.3);
+  }
+  
+  .neon-button:hover {
+    box-shadow: 0 0 20px rgba(246, 173, 85, 0.6);
+    transform: translateY(-2px);
+  }
+  
+  /* Crypto Card */
+  .crypto-card {
+    @apply bg-white rounded-xl shadow-lg border border-gray-200;
+    @apply transition-all duration-300 hover:shadow-xl hover:border-accent-300;
+    background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(247,250,252,0.9) 100%);
+  }
+  
+  /* Gradient Text */
+  .gradient-text {
+    background: linear-gradient(135deg, #f6ad55 0%, #48bb78 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Navigation Menu */
+  .nav-menu {
+    @apply bg-white/95 backdrop-blur-sm border-b border-gray-200;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Article Content */
+  .article-content {
+    @apply prose prose-lg max-w-none;
+    @apply prose-headings:text-primary-800 prose-p:text-primary-600;
+    @apply prose-a:text-accent-600 prose-a:no-underline hover:prose-a:underline;
+    @apply prose-code:text-accent-700 prose-code:bg-gray-100 prose-code:px-1 prose-code:rounded;
+  }
+}
+
+@layer utilities {
+  /* Animation utilities */
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  /* Glassmorphism effect */
+  .glass {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+}

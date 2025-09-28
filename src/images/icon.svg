@@ -1,0 +1,6 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="64" fill="#1a202c"/>
+  <circle cx="256" cy="200" r="80" fill="#f6ad55"/>
+  <path d="M176 320h160l-20 80H196l-20-80z" fill="#48bb78"/>
+  <text x="256" y="450" text-anchor="middle" fill="#f6ad55" font-family="Arial, sans-serif" font-size="48" font-weight="bold">FH</text>
+</svg>
